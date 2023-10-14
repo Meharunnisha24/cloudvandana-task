@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Survey.css">
+    <title>Customer Survey Form</title>
+    
+</head>
+<body>
+    <center >
+        <h1>Customer Survey Form</h1>
+        <div id="origin">
+            <form name="formN" id="form1">
+                <table cellspacing="10px">
+                    <tr>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="fname" required></td>
+                        <td><input type="text" name="lname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td><input type="date" id="dob1" name="dob1" required></td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td><select id="country" name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Canada">Canada</option>
+                            <option value="China">China</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="France">France</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="India">India</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Russia">Russia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Gender
+                            <input type="checkbox" name="gender" id="maleCheckbox"> Male
+                            <input type="checkbox" name="gender" id="femaleCheckbox"> Female
+                            <input type="checkbox" name="gender" id="otherCheckbox"> Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Profession</td>
+                        <td><input type="text" id="profession" name="profession" required></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number</td>
+                        <td><input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                   
+                    <tr>
+                        <td><input class="b" type="reset" id="rb"></td>
+                        <td style="float: right;"><button class="b" type="button" id="sb">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="popup">
+            <table>
+                <tr><thead>Submitted Details</thead></tr>
+                <tr>
+                    <td>First Name</td>
+                    <td id="fn"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td id="ln"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td id="dob"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td id="c"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td id="g"></td>
+                </tr>
+                <tr>
+                    <td>Profession</td>
+                    <td id="p"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="e"></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td id="m"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><button id="closeb" class="b">Close</button></center></td>
+                </tr>
+            </table>
+            
+        </div>
+        <br>
+            <br>
+          
+        <p>©2023 Customer Survey Form. All Rights Reserved| Designed by <span style="color: rgb(6, 2, 103);">Mehar</span> </p>
+    </center>
+ <script src="Survey.js"></script>
+</body>
+</html>
